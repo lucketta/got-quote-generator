@@ -15,7 +15,7 @@ const App = () =>
           <h1>Game of Thrones</h1>
           <h2>Quote Generator</h2>
         </div>
-          <h3>Click a button below for an inappropriate GoT quote:</h3>
+          <h3>Click below for the chance of an inappropriate GoT quote:</h3>
             <ButtonToolbar className="button-link">
               <Button href="/random_quote" >Random Quote</Button>
               <Button href="/character_quote" >Character Quote</Button>

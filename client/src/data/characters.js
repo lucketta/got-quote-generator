@@ -11,6 +11,10 @@ let characters = [
     name: "Tyrion",
     img: "http://static1.businessinsider.com/image/592edbeada6dde130642828e-1440/tyrion%20lannister%20hbo%20promo%20game%20of%20thrones%20season%207.png"
   },
+  {
+    name: "Jaime Lannister",
+    img: "http://static3.businessinsider.com/image/575e2534dd0895ff718b4b07-2153/jaime%20lannister%20game%20of%20thrones.png"
+  },
 
   {
     name: "Cersei Lannister",
@@ -22,19 +26,20 @@ let characters = [
   },
   {
     name: "Littlefinger",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOFB0h7MJ-FtAjOxCmkeJmgaN_wWZlLgNXj3lJujPzsYJpoU8wfw"
-  },
-  {
-    name: "Sansa",
-    img: "https://typeset-beta.imgix.net/uploads/image/2017/6/20/a556ab99-d812-41e0-b0bf-1dc289ebde4a-d87ae4a12be842e7d2edef89e09e94c46f87157db81007737c51b15d4802df2d4d7fb79bb044a5ee14b69ad0bc931f77.jpg"
+    img: "https://typeset-beta.imgix.net/2016/6/2/f0510580-b6b6-0131-d8f7-7eb00c19b1a9-ba44ca03-488e-4df6-8833-0f013b234f81.jpg"
   },
   {
     name: "Bronn",
     img: "http://www.remotepatrolled.com/wp-content/uploads/2012/04/Bronn-game-of-thrones.png"
   },
   {
+    name: "Sansa",
+    img: "https://typeset-beta.imgix.net/uploads/image/2017/6/20/a556ab99-d812-41e0-b0bf-1dc289ebde4a-d87ae4a12be842e7d2edef89e09e94c46f87157db81007737c51b15d4802df2d4d7fb79bb044a5ee14b69ad0bc931f77.jpg"
+  },
+
+  {
     name: "Bran",
-    img: "http://static6.businessinsider.com/image/597f2e2a85754f11f07fa567-1125/bran%20stark%20three-eyed%20raven%20game%20of%20thrones%20season%20seven.png"
+    img: "http://digitalspyuk.cdnds.net/17/14/768x408/gallery-1491600567-got11.jpg"
   },
   {
     name: "Davos",
@@ -77,16 +82,18 @@ let characters = [
     img: "http://images6.fanpop.com/image/photos/37000000/Game-of-Thrones-game-of-thrones-37045735-1280-800.jpg"
   },
   {
-    name: "The Discarded Knight",
-    img: "https://patricksponaugle.files.wordpress.com/2016/08/mountain.jpg"
+    name: "Brynden Tully",
+    img: "https://typeset-beta.imgix.net/rehost%2F2016%2F9%2F13%2Fbb23cadb-81b6-4abb-81dc-e783ac3baf24.jpg?w=800&h=800&fit=crop&crop=faces&auto=format&q=70"
   },
+
   {
     name: "Quaithe",
     img: "https://i.ytimg.com/vi/-fZqh-qw_0M/maxresdefault.jpg"
   },
+
   {
-    name: "Brynden Tully",
-    img: "https://i.ytimg.com/vi/Z9TrF2bsVNg/maxresdefault.jpg"
+    name: "The Discarded Knight",
+    img: "https://patricksponaugle.files.wordpress.com/2016/08/mountain.jpg"
   }
 ]
 
