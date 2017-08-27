@@ -11,7 +11,8 @@ const App = () =>
     <Router>
       <div className="App">
         <div className="App-header">
-          <h1>Game of Thrones Quote Generator</h1>
+          <h1>Game of Thrones</h1>
+          <h2>Quote Generator</h2>
         </div>
           <h3>Click a button below for an inappropriate GoT quote:</h3>
             <ButtonToolbar className="button-link">
