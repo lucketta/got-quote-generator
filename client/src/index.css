@@ -7,3 +7,7 @@ body {
 .navButton {
   text-align: center;
 }
+
+.button-link {
+  padding-left: 375px;
+}
