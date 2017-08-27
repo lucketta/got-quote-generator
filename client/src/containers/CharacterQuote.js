@@ -3,16 +3,26 @@ import { Jumbotron, Button, Thumbnail, Grid, Row, Col } from 'react-bootstrap';
 import { bindActionCreators } from 'redux'
 import * as quotes from '../actions/quoteCreators'
 import {connect} from 'react-redux'
+import { characters } from '../data'
 
 
-class RandomQuote extends Component {
+class CharacterQuote extends Component {
   componentDidMount() {
     }
 
     render() {
       return (
+        <div>
         <Jumbotron>
-          <Grid>
+        {characters.map((character, index) => (
+              <div key={index}>
+                {character.name}
+                {character.img}
+                <ul>
+           </ul>
+              </div>
+            ))}
+            <Grid>
             <Row>
             <Col xs={6} md={3}>
               <Thumbnail href="#" alt="171x180" src="/assets/thumbnail.png" />
@@ -25,7 +35,10 @@ class RandomQuote extends Component {
             </Col>
             </Row>
           </Grid>
+
         </Jumbotron>
+
+        </div>
       )
     }
 }
@@ -42,4 +55,4 @@ function mapDispatchToProps(dispatch) {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(RandomQuote);
+export default connect(mapStateToProps, mapDispatchToProps)(CharacterQuote);
