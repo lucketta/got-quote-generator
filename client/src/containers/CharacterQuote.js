@@ -13,12 +13,13 @@ class CharacterQuote extends Component {
     render() {
       return (
         <div>
+
           <Jumbotron>
           <Grid>
           <Row>
             {characters.map((character, index) => (
               <div key={index}>
-                <Col xs={6} md={3}>
+                <Col xs={6} md={4}>
                   <Thumbnail href="#" alt="171x180" src={character.img} >{character.name}</Thumbnail>
                 </Col>
               </div>
