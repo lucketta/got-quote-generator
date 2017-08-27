@@ -3,7 +3,7 @@ import { Jumbotron, Button, Thumbnail, Grid, Row, Col } from 'react-bootstrap';
 import { bindActionCreators } from 'redux'
 import * as quotes from '../actions/quoteCreators'
 import {connect} from 'react-redux'
-import { characters } from '../data'
+import { characters } from '../data/characters'
 
 
 class CharacterQuote extends Component {
@@ -13,31 +13,19 @@ class CharacterQuote extends Component {
     render() {
       return (
         <div>
-        <Jumbotron>
-        {characters.map((character, index) => (
+          <Jumbotron>
+          <Grid>
+          <Row>
+            {characters.map((character, index) => (
               <div key={index}>
-                {character.name}
-                {character.img}
-                <ul>
-           </ul>
+                <Col xs={6} md={3}>
+                  <Thumbnail href="#" alt="171x180" src={character.img} >{character.name}</Thumbnail>
+                </Col>
               </div>
             ))}
-            <Grid>
-            <Row>
-            <Col xs={6} md={3}>
-              <Thumbnail href="#" alt="171x180" src="/assets/thumbnail.png" />
-            </Col>
-            <Col xs={6} md={3}>
-              <Thumbnail href="#" alt="171x180" src="/assets/thumbnail.png" />
-            </Col>
-            <Col xs={6} md={3}>
-              <Thumbnail href="#" alt="171x180" src="/assets/thumbnail.png" />
-            </Col>
-            </Row>
+          </Row>
           </Grid>
-
         </Jumbotron>
-
         </div>
       )
     }

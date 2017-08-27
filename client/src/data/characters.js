@@ -1,7 +1,7 @@
 let characters = [
   {
     name: "Jon Snow",
-    img: "test"
+    img: "https://static.independent.co.uk/s3fs-public/thumbnails/image/2015/06/15/09/jon-snow.jpg"
   },
   {
     name: "Tyrion",
@@ -48,7 +48,7 @@ let characters = [
     img: "test"
   },
   {
-    name: "Olenna Tyrell"
+    name: "Olenna Tyrell",
     img: "test"
   },
   {
