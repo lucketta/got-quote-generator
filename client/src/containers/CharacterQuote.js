@@ -7,7 +7,9 @@ import { characters } from '../data/characters'
 
 
 class CharacterQuote extends Component {
-  componentDidMount() {
+  handleOnClick(event) {
+    console.log("TS", event.target.alt)
+    this.props.quotes.fetchQuote(event.target.alt);
     }
 
     render() {
@@ -20,13 +22,14 @@ class CharacterQuote extends Component {
             {characters.map((character, index) => (
               <div key={index}>
                 <Col xs={6} md={4}>
-                  <Thumbnail href="#" alt="171x180" src={character.img} >{character.name}</Thumbnail>
+                  <Thumbnail alt={character.name} onClick={(event) => this.handleOnClick(event)} src={character.img}  >{character.name}</Thumbnail>
                 </Col>
               </div>
             ))}
           </Row>
           </Grid>
         </Jumbotron>
+
         </div>
       )
     }
