@@ -12,18 +12,20 @@ let characters = [
     img: "http://static1.businessinsider.com/image/592edbeada6dde130642828e-1440/tyrion%20lannister%20hbo%20promo%20game%20of%20thrones%20season%207.png"
   },
   {
+    name: "Cersei Lannister",
+    img: "https://typeset-beta.imgix.net/rehost%2F2016%2F9%2F13%2F28697c17-b266-4a46-a87c-2de0671d171b.jpg"
+  },
+
+
+  {
+    name: "Sansa",
+    img: "http://static1.businessinsider.com/image/5773fa29dd08954c3c8b48e6-2147/sansa%20stark%20chin%20up.png"
+  },
+  {
     name: "Jaime Lannister",
     img: "http://static3.businessinsider.com/image/575e2534dd0895ff718b4b07-2153/jaime%20lannister%20game%20of%20thrones.png"
   },
 
-  {
-    name: "Cersei Lannister",
-    img: "https://typeset-beta.imgix.net/rehost%2F2016%2F9%2F13%2F28697c17-b266-4a46-a87c-2de0671d171b.jpg"
-  },
-  {
-    name: "Jaime Lannister",
-    img: "http://static3.businessinsider.com/image/575e2534dd0895ff718b4b07-2153/jaime%20lannister%20game%20of%20thrones.png"
-  },
   {
     name: "Littlefinger",
     img: "https://typeset-beta.imgix.net/2016/6/2/f0510580-b6b6-0131-d8f7-7eb00c19b1a9-ba44ca03-488e-4df6-8833-0f013b234f81.jpg"
@@ -32,14 +34,11 @@ let characters = [
     name: "Bronn",
     img: "http://www.remotepatrolled.com/wp-content/uploads/2012/04/Bronn-game-of-thrones.png"
   },
-  {
-    name: "Sansa",
-    img: "https://typeset-beta.imgix.net/uploads/image/2017/6/20/a556ab99-d812-41e0-b0bf-1dc289ebde4a-d87ae4a12be842e7d2edef89e09e94c46f87157db81007737c51b15d4802df2d4d7fb79bb044a5ee14b69ad0bc931f77.jpg"
-  },
+
 
   {
     name: "Bran",
-    img: "http://digitalspyuk.cdnds.net/17/14/768x408/gallery-1491600567-got11.jpg"
+    img: "http://static5.uk.businessinsider.com/image/597f2e3185754f11f07fa56c-1125/bran%20stark%20three-eyed%20raven%20game%20of%20thrones%20season%20seven.png"
   },
   {
     name: "Davos",

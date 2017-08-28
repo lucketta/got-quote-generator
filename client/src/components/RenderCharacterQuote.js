@@ -17,12 +17,15 @@ class RenderCharacterQuote extends Component {
   render(){
     console.log("TEST",this.props.history.state);
     return (
-      <Jumbotron>
-      <h2>"{this.props.quote.quote}"</h2>
-      <h3>- {this.props.quote.character}</h3>
-      <Button onClick={this.onBackButtonEvent} >Back</Button>
+      <div>
+        <Jumbotron>
+        <h2>"{this.props.quote.quote}"</h2>
+        <h3>- {this.props.quote.character}</h3>
+        </Jumbotron>
 
-      </Jumbotron>
+        <Button onClick={this.onBackButtonEvent} >Back</Button>
+      </div>
+
     )
   }
 }
