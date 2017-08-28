@@ -1,7 +1,5 @@
 import fetch from 'isomorphic-fetch';
 export function fetchQuote(name) {
-  console.log("AME",name);
-
   if(name){
     return function(dispatch){
       dispatch({type: 'LOADING_QUOTE'})

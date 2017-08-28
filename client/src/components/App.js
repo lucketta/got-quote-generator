@@ -1,10 +1,9 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router, NavLink, Route, Switch } from 'react-router-dom';
-import { Link, withRouter } from 'react-router-dom'
-import { Nav, Navbar, Jumbotron, Button, ButtonToolbar } from 'react-bootstrap';
-import { LinkContainer } from 'react-router-bootstrap';
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Button, ButtonToolbar } from 'react-bootstrap';
 import RandomQuote from '../containers/RandomQuote';
 import CharacterQuote from '../containers/CharacterQuote';
+import RenderCharacterQuote from '../components/RenderCharacterQuote';
 
 import '../App.css';
 
@@ -20,8 +19,11 @@ const App = () =>
               <Button href="/random_quote" >Random Quote</Button>
               <Button href="/character_quote" >Character Quote</Button>
             </ButtonToolbar>
-        <Route path="/random_quote" component={RandomQuote} />
-        <Route path="/character_quote" component={CharacterQuote} />
+        <Switch>
+          <Route path="/character_quote/character" component={RenderCharacterQuote} />
+          <Route path="/random_quote" component={RandomQuote} />
+          <Route path="/character_quote" component={CharacterQuote} />
+        </Switch>
 
       </div>
     </Router>

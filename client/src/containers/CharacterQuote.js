@@ -1,15 +1,17 @@
 import React, { Component } from 'react';
-import { Jumbotron, Button, Thumbnail, Grid, Row, Col } from 'react-bootstrap';
-import { bindActionCreators } from 'redux'
-import * as quotes from '../actions/quoteCreators'
-import {connect} from 'react-redux'
-import { characters } from '../data/characters'
+import { Jumbotron, Thumbnail, Grid, Row, Col } from 'react-bootstrap';
+import { bindActionCreators } from 'redux';
+import * as quotes from '../actions/quoteCreators';
+import {connect} from 'react-redux';
+import { characters } from '../data/characters';
 import { withRouter } from 'react-router';
+import RenderCharacterQuote from '../components/RenderCharacterQuote';
 
 
 class CharacterQuote extends Component {
   handleOnClick(event) {
-    this.props.quotes.fetchQuote(event.target.alt);
+    this.props.history.state = event.target.alt;
+    this.props.history.push(`/character_quote/character`);
     }
 
     render() {
@@ -28,7 +30,6 @@ class CharacterQuote extends Component {
           </Row>
           </Grid>
         </Jumbotron>
-
         </div>
       )
     }
@@ -46,4 +47,4 @@ function mapDispatchToProps(dispatch) {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(CharacterQuote);
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(CharacterQuote,RenderCharacterQuote));
