@@ -15,7 +15,6 @@ class RenderCharacterQuote extends Component {
   }
 
   render(){
-    console.log("TEST",this.props.history.state);
     return (
       <div>
         <Jumbotron>
