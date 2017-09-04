@@ -11,7 +11,7 @@ class RenderCharacterQuote extends Component {
 
   onBackButtonEvent = (e) => {
     e.preventDefault();
-   this.props.history.goBack();
+    this.props.history.goBack();
   }
 
   render(){
