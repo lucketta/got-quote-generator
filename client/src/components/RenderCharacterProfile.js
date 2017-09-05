@@ -9,12 +9,7 @@ import axios from 'axios';
 class RenderCharacterProfile extends Component {
   constructor(props) {
         super(props);
-
-        this.state = {
-          char: "",
-          showComponent: false,
-        }
-      }
+  }
 
   handleOnClick(event) {
     event.preventDefault();
