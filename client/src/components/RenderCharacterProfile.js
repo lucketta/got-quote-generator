@@ -3,8 +3,6 @@ import { Jumbotron, Thumbnail, Grid, Row, Col, Button } from 'react-bootstrap';
 import { bindActionCreators } from 'redux';
 import * as profiles from '../actions/profiles';
 import {connect} from 'react-redux';
-import { withRouter } from 'react-router';
-import RenderCharacterQuote from '../components/RenderCharacterQuote';
 import axios from 'axios';
 
 
