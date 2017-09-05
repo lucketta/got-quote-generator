@@ -19,3 +19,7 @@ npm install
 ```
 
 Then `rake start` to start both servers.
+
+## License ##
+
+The app is available as open source under the terms of the [MIT License](https://github.com/lucketta/got-quote-generator/blob/master/LICENSE).
