@@ -82,7 +82,7 @@ characters = [
   },
   {
     name: "Brynden Tully",
-    photo_url: "https://typeset-beta.imgix.net/rehost%2F2016%2F9%2F13%2Fbb23cadb-81b6-4abb-81dc-e783ac3baf24.jpg?w=800&h=800&fit=crop&crop=faces&auto=format&q=70"
+    photo_url: "https://s-media-cache-ak0.pinimg.com/originals/d0/17/27/d0172711b395736643c39ca261c7d208.jpg"
   },
 
   {
@@ -95,5 +95,5 @@ characters = [
     photo_url: "https://patricksponaugle.files.wordpress.com/2016/08/mountain.jpg"
   }
 ]
-
+Profile.destroy_all;
 Profile.create(characters);

@@ -26,6 +26,24 @@ h3 {
 }
 
 .button-link {
-  padding-left: 600px;
-  padding-bottom: 10px;
+    text-align:center;
+    font-family: fantasy;
+    display: inline-block;
+    *display:inline; /* ie7 fix */
+    float: none; /* this is the part that makes it work */
+}
+
+.delete {
+  font-family: fantasy;
+  color: #CC0000;
+}
+
+.thumbnails {
+  font-family: fantasy;
+  font-size: 1.5em;
+  display: inline-block;
+  *display:inline; /* ie7 fix */
+  float: none; /* this is the part that makes it work */
+  width:100%;
+ height: 230px;
 }

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
-  resources :profiles
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get 'character_quote/:name/delete', to: "profiles#destroy"
+
+  resources :profiles, only: [:index], as: "character_quote"
 end

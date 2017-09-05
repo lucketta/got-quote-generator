@@ -7,10 +7,11 @@ import {createStore, applyMiddleware, compose } from 'redux'
 import thunk from 'redux-thunk'
 import './index.css';
 import App from './components/App';
-import quotesReducer from './reducers/quotesReducer'
+import gotReducer from './reducers/gotReducer'
+
 
 const store = createStore(
-  quotesReducer,
+  gotReducer,
   compose(
     applyMiddleware(thunk),
     window.devToolsExtension ? window.devToolsExtension() : f => f
