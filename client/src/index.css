@@ -45,5 +45,5 @@ h3 {
   *display:inline; /* ie7 fix */
   float: none; /* this is the part that makes it work */
   width:100%;
- height: 230px;
+ height: 300px;
 }

@@ -1,24 +1,7 @@
-# README
+## Usage ##
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Click on random quotes to generate random quotes from the Game of Thrones API.
 
-Things you may want to cover:
+Click on specific characters to see their quotes.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Delete characters, if you don't want to see their face (*cough* Cersei *cough*).
