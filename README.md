@@ -1,3 +1,7 @@
+## Welcome ##
+
+Welcome to Game of Thrones Quote Generator. Using Rails API backend, REACT/REDUX front-end.
+
 ## Usage ##
 
 Click on random quotes to generate random quotes from the Game of Thrones API.
