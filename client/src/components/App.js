@@ -4,7 +4,6 @@ import { Button, ButtonToolbar } from 'react-bootstrap';
 import RandomQuote from '../containers/RandomQuote';
 import CharacterQuote from '../containers/CharacterQuote';
 import RenderCharacterQuote from '../components/RenderCharacterQuote';
-
 import '../App.css';
 
 const App = () =>
@@ -24,7 +23,6 @@ const App = () =>
           <Route path="/random_quote" component={RandomQuote} />
           <Route path="/character_quote" component={CharacterQuote} />
         </Switch>
-
       </div>
     </Router>
 
