@@ -1,15 +1,11 @@
 import React, { Component } from 'react';
 import { Jumbotron, Thumbnail, Grid, Row, Col, Button } from 'react-bootstrap';
 import { bindActionCreators } from 'redux';
-import * as profiles from '../actions/profiles';
+import { deleteProfile} from '../actions/profiles';
 import {connect} from 'react-redux';
-import axios from 'axios';
 
 
 class RenderCharacterProfile extends Component {
-  constructor(props) {
-        super(props);
-  }
 
   handleOnClick(event) {
     event.preventDefault();
@@ -19,12 +15,7 @@ class RenderCharacterProfile extends Component {
 
   handleDelete(event) {
     event.preventDefault();
-    var that = this.props.history;
-    axios.get('/character_quote/'+event.target.value+'/delete')
-  .then(function (response) {
-    window.location.reload();
-    that.push(`/character_quote`);
-  })
+    this.props.deleteProfile(event.target.value, this.props.history);
 }
 
   render(){
@@ -33,10 +24,10 @@ class RenderCharacterProfile extends Component {
       <Jumbotron>
       <Grid>
       <Row>
-        {this.props.profile.map((character, index) => (
+        {this.props.profiles.map((character, index) => (
           <div key={index}>
             <Col xs={6} md={4}>
-              <Button className="delete" onClick={event => this.handleDelete(event)} value={character.name} >Delete</Button>
+              <Button className="delete" onClick={event => this.handleDelete(event)} value={character.id} >Delete</Button>
 
               <Thumbnail className="thumbnails" alt={character.name} onClick={(event) => this.handleOnClick(event)} src={character.photo_url}  >{character.name}</Thumbnail>
             </Col>
@@ -52,13 +43,13 @@ class RenderCharacterProfile extends Component {
 }
 function mapStateToProps(state) {
   return {
-    profile: state.profile
+    profiles: state.profiles
   }
 }
 
 function mapDispatchToProps(dispatch) {
   return {
-    profiles: bindActionCreators(profiles, dispatch)
+    deleteProfile: bindActionCreators(deleteProfile, dispatch)
   }
 }
 

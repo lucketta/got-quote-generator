@@ -5,7 +5,6 @@ class ProfilesController < ApplicationController
   end
 
   def destroy
-    profile = Profile.find_by(name: params[:name])
-    profile.delete
+    render json: {id: params[:id]}
   end
 end

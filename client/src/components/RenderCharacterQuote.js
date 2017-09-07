@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Jumbotron, Button } from 'react-bootstrap';
+import {Link } from 'react-router-dom';
 import { bindActionCreators } from 'redux';
 import * as quotes from '../actions/quoteCreators';
 import {connect} from 'react-redux';
@@ -22,7 +23,7 @@ class RenderCharacterQuote extends Component {
         <h3>- {this.props.quote.character}</h3>
         </Jumbotron>
 
-        <Button onClick={this.onBackButtonEvent} >Back</Button>
+        <Link to="/character_quote" >Back</Link>
       </div>
 
     )
