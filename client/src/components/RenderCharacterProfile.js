@@ -3,9 +3,13 @@ import { Jumbotron, Thumbnail, Grid, Row, Col, Button } from 'react-bootstrap';
 import { bindActionCreators } from 'redux';
 import { deleteProfile} from '../actions/profiles';
 import {connect} from 'react-redux';
+import LikeCounter from './LikeCounter';
+import CharacterCard from './CharacterCard';
 
 
 class RenderCharacterProfile extends Component {
+
+
 
   handleOnClick(event) {
     event.preventDefault();
@@ -14,9 +18,11 @@ class RenderCharacterProfile extends Component {
     }
 
   handleDelete(event) {
+    console.log(this);
     event.preventDefault();
     this.props.deleteProfile(event.target.value, this.props.history);
 }
+
 
   render(){
     return (
@@ -26,11 +32,7 @@ class RenderCharacterProfile extends Component {
       <Row>
         {this.props.profiles.map((character, index) => (
           <div key={index}>
-            <Col xs={6} md={4}>
-              <Button className="delete" onClick={event => this.handleDelete(event)} value={character.id} >Delete</Button>
-
-              <Thumbnail className="thumbnails" alt={character.name} onClick={(event) => this.handleOnClick(event)} src={character.photo_url}  >{character.name}</Thumbnail>
-            </Col>
+            <CharacterCard character={character}/>
           </div>
         ))}
       </Row>
