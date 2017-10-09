@@ -17,11 +17,15 @@ render() {
           <h1>Game of Thrones</h1>
           <h2>Quote Generator</h2>
         </div>
-          <h3>Click below for the chance of an inappropriate GoT quote:</h3>
+          <div className="Home">
+            <h3>Click below for the chance of an inappropriate GoT quote:</h3>
+            </div>
+
             <ButtonToolbar className="button-link">
               <Link to="/random_quote" className="link">Random Quote</Link>
               <Link to="/character_quote" >Character Quote</Link>
             </ButtonToolbar>
+
         <Switch>
           <Route path="/character_quote/character" component={RenderCharacterQuote} />
           <Route path="/random_quote" component={RandomQuote} />
