@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Jumbotron, Thumbnail, Grid, Row, Col, Button } from 'react-bootstrap';
+import {Thumbnail, Col } from 'react-bootstrap';
 
 
 

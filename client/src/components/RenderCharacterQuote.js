@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Jumbotron, Button } from 'react-bootstrap';
+import { Jumbotron } from 'react-bootstrap';
 import {Link } from 'react-router-dom';
 import { bindActionCreators } from 'redux';
 import * as quotes from '../actions/quoteCreators';

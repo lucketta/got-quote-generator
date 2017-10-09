@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Jumbotron, Thumbnail, Grid, Row, Col, Button } from 'react-bootstrap';
+import { Jumbotron, Grid, Row } from 'react-bootstrap';
 import { bindActionCreators } from 'redux';
 import { deleteProfile} from '../actions/profiles';
 import {connect} from 'react-redux';
